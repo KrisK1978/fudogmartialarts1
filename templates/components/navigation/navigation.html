@@ -1,0 +1,36 @@
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar">
+    <div class="container-fluid">
+        <!--Fudog logo-->
+        <div class="fudog-logo me-auto mb-2 mb-lg-0">
+        <a href="{{ url_for('about') }}" class="fudog brand-logo">
+            <img src="{{ url_for('static', filename='media/logo/fudog-logo.png') }}" alt="fudog-logo" 
+            height="125"></a>
+        </div>
+        <!--Fudog collapse button-->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="{{ url_for('static', filename='media/logo/fudog-logo-button.png') }}" alt="fudog-logo" 
+            height="50"></button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link about" aria-current="page" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fight Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="email-icon" href="{{ url_for('contact')}}"><i class="far fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}

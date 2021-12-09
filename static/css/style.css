@@ -1,0 +1,191 @@
+/*Import font style*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+/* Styling HTML and Body elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 99vh;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #020413;
+    z-index: 1;
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/*Styling Footer*/
+footer.page-footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: transparent;
+    text-align: center;
+}
+
+.social-media i {
+    font-size: 2rem;
+    color: #FFFFFF;
+    border: 0.2rem solid #948e83;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.fab:hover {
+    color:#ffa90a;
+    border: 0.2rem solid #ffa90a;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.fudog-text {
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+    font-size: 1.3rem;
+    color: #faf5f5ad;
+}
+
+.fudog-info {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    color: #faf5f5ad;
+}
+
+.fudog-info i {
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.design-text {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #faf5f5ad;
+    opacity: 0.3;
+}
+
+.fudog-phone a,
+.fudog-email a {
+    color: #ffa90a;
+}
+
+.far.fa-envelope {
+    margin-left: 2.5rem;
+}
+
+.fas.fa-arrow-up {
+    color: #020413;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.float-button {
+    position: fixed;
+	width: 4rem;
+	height: 4rem;
+	bottom: 3rem;
+	right: 1rem;
+	background-color: #ffa90a;
+	border-radius: 50px;
+    border: 0.2rem solid #020413;
+    margin-bottom: 3.3rem;
+    margin-right: 1rem;
+}
+
+.float-button:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+/* Navbar styling */
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #020413;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.navbar-nav li {
+    font-size: 1.5rem;;
+    letter-spacing: 0.3rem;
+    margin: 1rem;
+}
+
+a.nav-link {
+    color: #ffa90a;
+}
+
+a.nav-link:hover,
+a.email-icon:hover {
+    color: #FFFFFF;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+a.nav-link.about {
+    color: #FFFFFF;
+}
+
+a.nav-link.about:hover {
+    color: #ffa90a;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+a.email-icon {
+    font-size: 2.5rem;
+    color: #ffa90a;
+    cursor: pointer;
+}
+
+/*Styling Contact form*/
+p.contact-form-heading  {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem;
+}
