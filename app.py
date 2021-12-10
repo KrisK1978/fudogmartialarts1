@@ -16,6 +16,12 @@ def about():
     """
     return render_template("pages/about.html")
 
+# Gallery page
+@app.route("/gallery")
+def gallery():
+    """Renders Gallery page"""
+    return render_template("pages/gallery.html")
+    
 
 # Contact Us page
 @app.route("/contact", methods=["GET", "POST"])

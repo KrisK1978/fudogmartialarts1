@@ -163,9 +163,30 @@ a.cancel.btn:hover {
     transition: all .4s ease-in-out;
 }
 
+/*Gallery styling*/
+.media-gallery {
+    width: 80%;
+    margin: 6.2rem auto 3.1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
+    grid-gap: 1.8rem;
+}
+
+.media-gallery img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.media-gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 1.2rem;
+    box-shadow: 0 1.8rem 4.6rem #FFFFFF;
+}
+
+
 /*Styling Footer*/
 footer.page-footer {
-    position: relative;
+    position: flex;
     left: 0;
     bottom: 0;
     width: 100%;
