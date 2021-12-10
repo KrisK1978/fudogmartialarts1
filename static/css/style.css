@@ -83,7 +83,11 @@ p.contact-form-heading {
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
-    margin: 3rem;
+    margin: 1rem;
+}
+
+.row-flashes {
+    color: #FFFFFF;
 }
 
 .contact-form.card-panel {
@@ -91,7 +95,7 @@ p.contact-form-heading {
     background-color: #FFFFFF;
     border: 0.5rem solid #ffa90a;
     border-radius: 0.8rem;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 2rem;
 }
 
@@ -119,6 +123,45 @@ textarea {
     margin-left: 0.5rem;
 }
 
+.action-buttons {
+    text-align: center;
+}
+
+button.submit.btn {
+    border: 0.3rem solid #020413;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #ffa90a;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+a.cancel.btn {
+    border: 0.3rem solid #020413;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #948e83;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+button.submit.btn:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+a.cancel.btn:hover {
+    background-color: #ffa90a;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
 
 /*Styling Footer*/
 footer.page-footer {

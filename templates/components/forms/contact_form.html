@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s12 m8 offset-m2 input-field">
+                        <div class="col s12 m8 offset-m2">
                             <label class="message" for="message"><i class="fas fa-pen-fancy 
                                 prefix"></i></label>
                             <textarea name="message" id="message" placeholder="Message" cols="5" 
@@ -47,15 +47,14 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="action-buttons">
+                        <div class="col s12 m8 offset-m2">
+                            <div class="action-buttons">
                             <!--Submit button-->
-                            <div class="col s12">
-                                <button type="submit" class="btn">Submit
+                            <button type="submit" class="submit btn">Submit
                                 <i class="fas fa-envelope-open-text right"></i></button>
                             <!--Cancel button -->
-                                <a href="{{ url_for('about') }}" class="btn">
+                            <a href="{{ url_for('about') }}" class="cancel btn">
                                 Cancel<i class="far fa-window-close right"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
