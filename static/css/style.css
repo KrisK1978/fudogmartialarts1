@@ -30,7 +30,7 @@ h3.media-gallery-heading {
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
-    margin: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Navbar styling */
@@ -113,6 +113,13 @@ a.email-icon {
 }
 
 /*Styling Contact form*/
+form {
+    width: 80%;
+    margin: auto;
+    border-radius: 0.5rem;
+    border: 0.4rem solid #ffa90a;
+}
+
 .row-flashes {
     color: #FFFFFF;
 }
@@ -122,8 +129,8 @@ a.email-icon {
     background-color: #FFFFFF;
     border: 0.5rem solid #ffa90a;
     border-radius: 0.8rem;
-    margin: 1rem;
-    padding: 2rem;
+    margin: 0.5rem;
+    padding: 1rem;
 }
 
 input,

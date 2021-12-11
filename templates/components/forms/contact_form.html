@@ -8,57 +8,62 @@
             </div>
         </div>
         <div class="row">
-            <form  method="POST" action="{{ url_for('contact') }}">
-                <!--Flash messages-->
-                {% with messages = get_flashed_messages() %}
-                    {% if messages %}
-                        {% for message in messages %}
-                            <div class="row-flashes">
-                                <h4 class="flash-message">{{ message }}</h4>
+            <div>
+                <div class="col s12 m8 offset-m2">
+                    <form  method="POST" action="{{ url_for('contact') }}">
+                        <!--Flash messages-->
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div class="row-flashes">
+                                        <h4 class="flash-message">{{ message }}</h4>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                        <div class="contact-form card-panel">
+                            <!--Name-->
+                            <div class="row">
+                                <div class="col s12 m12 offset-m2">
+                                    <label class="name" for="name"><i class="fas fa-user-tie 
+                                        prefix"></i></label>
+                                    <input id="name" name="name" type="text" placeholder="Name" 
+                                        class="validate" required>
+                                </div>
                             </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endwith %}
-                <div class="contact-form card-panel">
-                    <!--Name-->
-                    <div class="row">
-                        <div class="col s12 m12 offset-m2">
-                            <label class="name" for="name"><i class="fas fa-user-tie 
-                                prefix"></i></label>
-                            <input id="name" name="name" type="text" placeholder="Name" 
-                                class="validate" required>
+                             <!--Email address-->
+                            <div class="row">
+                                <div class="col s12 m8 offset-m2">
+                                    <label class="email" for="email"> <i class="fas fa-at 
+                                        prefix"></i></label>
+                                    <input id="email" type="text" placeholder="Email address" 
+                                    class="validate" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m8 offset-m2">
+                                    <label class="message" for="message"><i class="fas fa-pen-fancy 
+                                        prefix"></i></label>
+                                    <textarea name="message" id="message" placeholder="Message" cols="5" 
+                                    rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m8 offset-m2">
+                                    <div class="action-buttons">
+                                    <!--Submit button-->
+                                    <button type="submit" class="submit btn">Submit
+                                        <i class="fas fa-envelope-open-text right"></i></button>
+                                    <!--Cancel button -->
+                                    <a href="{{ url_for('about') }}" class="cancel btn">
+                                        Cancel<i class="far fa-window-close right"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                     <!--Email address-->
-                    <div class="row">
-                        <div class="col s12 m8 offset-m2">
-                            <label class="email" for="email"> <i class="fas fa-at 
-                                prefix"></i></label>
-                            <input id="email" type="text" placeholder="Email address" 
-                            class="validate" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m8 offset-m2">
-                            <label class="message" for="message"><i class="fas fa-pen-fancy 
-                                prefix"></i></label>
-                            <textarea name="message" id="message" placeholder="Message" cols="5" 
-                            rows="5"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m8 offset-m2">
-                            <div class="action-buttons">
-                            <!--Submit button-->
-                            <button type="submit" class="submit btn">Submit
-                                <i class="fas fa-envelope-open-text right"></i></button>
-                            <!--Cancel button -->
-                            <a href="{{ url_for('about') }}" class="cancel btn">
-                                Cancel<i class="far fa-window-close right"></i></a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
+            </div>
+            
         </div>
     </div>
  
