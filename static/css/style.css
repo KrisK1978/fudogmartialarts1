@@ -25,7 +25,8 @@ body {
 }
 
 h3.contact-form-heading,
-h3.media-gallery-heading {
+h3.media-gallery-heading,
+h3.timetable-heading {
     color: #FFFFFF;
     font-size: 2rem;
     font-weight: 900;
@@ -84,6 +85,10 @@ a.email-icon {
     color: #ffa90a;
     cursor: pointer;
 }
+
+/*Styling Classes content*/
+
+
 
 /*Styling Gallery*/
 .media-gallery {

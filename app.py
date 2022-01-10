@@ -16,6 +16,16 @@ def about():
     """
     return render_template("pages/about.html")
 
+
+# Classes page 
+@app.route("/classes")
+def classes():
+    """
+    Renders timetable page 
+    """
+    return render_template("pages/classes.html")
+
+
 # Gallery page
 @app.route("/gallery")
 def gallery():
