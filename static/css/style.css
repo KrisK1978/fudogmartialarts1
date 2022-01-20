@@ -86,8 +86,52 @@ a.email-icon {
     cursor: pointer;
 }
 
-/*Styling Classes content*/
+/*Styling About Page*/
+.clearfix img {
+    width: 50%;
+}
 
+
+
+/*Styling Classes content*/
+.monday-card,
+.wednesday-card,
+.friday-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffa90a;
+    background-clip: border-box;
+    border: 0.3rem solid #FFFFFF;
+    border-radius: .25rem;
+    margin: 1.5rem;
+}
+
+.tuesday-card,
+.thursday-card,
+.additional-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FFFFFF;
+    background-clip: border-box;
+    border: 0.3rem solid #ffa90a;
+    border-radius: .25rem;
+    margin: 1.5rem;
+}
+
+
+.card-header {
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin: 4rem;
+
+}
 
 
 /*Styling Gallery*/
