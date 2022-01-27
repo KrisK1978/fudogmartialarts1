@@ -27,8 +27,9 @@ body {
 h3.contact-form-heading,
 h3.media-gallery-heading,
 h3.timetable-heading {
+    font-family: 'Architects Daughter', cursive;
     color: #FFFFFF;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
     margin-bottom: 2rem;
@@ -87,16 +88,12 @@ a.email-icon {
 }
 
 /*Styling About Page*/
-.clearfix img {
-    width: 50%;
-}
+
 
 
 
 /*Styling Classes content*/
-.monday-card,
-.wednesday-card,
-.friday-card {
+.card-one {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -105,13 +102,11 @@ a.email-icon {
     background-color: #ffa90a;
     background-clip: border-box;
     border: 0.3rem solid #FFFFFF;
-    border-radius: .25rem;
+    border-radius: 0.5rem;
     margin: 1.5rem;
 }
 
-.tuesday-card,
-.thursday-card,
-.additional-card {
+.card-two {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -120,19 +115,94 @@ a.email-icon {
     background-color: #FFFFFF;
     background-clip: border-box;
     border: 0.3rem solid #ffa90a;
-    border-radius: .25rem;
+    border-radius: 0.5rem;
     margin: 1.5rem;
 }
 
-
-.card-header {
-    color: #FFFFFF;
-    font-size: 1.7rem;
-    font-weight: 900;
-    margin: 4rem;
-
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
 }
 
+.card-title-one {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.additional-text-title {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+}
+
+.card-title-two {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #ffa90a;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 2rem;
+    color:#020413;
+    margin-top: 2rem;
+}
+
+.additional-info {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffa90a;
+    font-weight: bolder;
+    margin-top: 2rem;;
+}
+
+.far.fa-comment-dots {
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    margin: 0.5rem;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.far.fa-comment-dots:hover {
+    color: #ffa90a;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
+.divider-one {
+    background-color: #FFFFFF;
+    height: 0.3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.divider-two {
+    background-color:#ffa90a;
+    height: 0.3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.divider-three {
+    background-color: #FFFFFF;
+    height: 0.4rem;
+    margin-top: 2rem;
+}
 
 /*Styling Gallery*/
 .media-gallery {
@@ -246,6 +316,10 @@ a.cancel.btn:hover {
     transition: all .4s ease-in-out;
 }
 
+.far.fa-window-close.right {
+    margin-left: 0.5rem;
+}
+
 /*Styling Footer*/
 footer.page-footer {
     position: flex;
@@ -256,6 +330,7 @@ footer.page-footer {
     padding: 2rem;
     background-color: transparent;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .social-media i {
