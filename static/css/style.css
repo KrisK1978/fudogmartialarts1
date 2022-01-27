@@ -26,7 +26,8 @@ body {
 
 h3.contact-form-heading,
 h3.media-gallery-heading,
-h3.timetable-heading {
+h3.timetable-heading,
+h3.about-heading {
     font-family: 'Architects Daughter', cursive;
     color: #FFFFFF;
     font-size: 2.5rem;
@@ -88,9 +89,68 @@ a.email-icon {
 }
 
 /*Styling About Page*/
+.about-card-one {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffa90a;
+    background-clip: border-box;
+    border-radius: 0.5rem;
+    margin: 1.5rem;
+}
 
+.about-card-two {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FFFFFF;
+    background-clip: border-box;
+    border: 0.3rem solid #ffa90a;
+    border-radius: 0.5rem;
+    margin: 1.5rem;
+}
 
+.about-card-title {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
 
+.about-card-text {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.8rem;
+    color: #020413;
+    margin: 2rem;
+}
+
+.coach-card-title {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #ffa90a;
+    margin-bottom: 1rem;
+}
+
+.final-text {
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin: 3rem;
+}
+
+.about-img {
+    max-width: 100%;
+}
 
 /*Styling Classes content*/
 .card-one {

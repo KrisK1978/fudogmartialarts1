@@ -1,8 +1,56 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 
-    <!--About page content-->
-
-    
-
+    <!--About Page content-->
+    <div class="about container">
+        <h3 class="about-heading">Welcome to Fu Dog Martial Arts!</h3>
+          <div class="row">
+            <div class="col-sm-6">
+                <div class="about-card-one">
+                  <div class="card-body">
+                    <img class="about-img" src="{{ url_for('static', filename='media/logo/fudog-baner.jpg') }}"/></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="about-card-one">
+                  <div class="card-body">
+                    <h5 class="about-card-title">Who we are and what we do?</h5>
+                    <div class="divider-one"></div>
+                    <p class="about-card-text">
+                       Fu Dog Martial Arts is a new combat gym, aimed at 
+                       providing the local community with a safe, welcoming 
+                       and respectful environment to work out and achieve 
+                       their fitness goals.</p>
+                    <p class="about-card-text">
+                       Regardless of age, gender, experience and skill, Fu Dog
+                       Martial Arts provides the facilities and coaching 
+                       experience to support personal growth through building 
+                       confidence and self-belief.</p>
+                    <p class="about-card-text">
+                        Fu Dog specialises in Judo, Mixed Martial Arts (MMA) and 
+                        a range of circuit and fitness classes for all age ranges 
+                        and abilities.</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="about-card-two">
+                  <div class="card-body">
+                    <h5 class="coach-card-title">Head Coach</h5>
+                    <div class="divider-two"></div>
+                    <p class="about-card-text">
+                      Our Head Coach, Iain Feenan, has over 20 years experience in 
+                      judo and combat sport. Iain trained full time and competed as 
+                      an international judo athlete, since retiring from competitive sport, 
+                      he transitioned to MMA and now trains as a pro mma fighter</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <p class="final-text">
+                    Join us and begin your Fu Dog Martial Arts journey!</p> 
+              </div>
+          </div>
+      </div>
 {% endblock %}
